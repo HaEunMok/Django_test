@@ -1,0 +1,13 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block body %}
+        <img src="{% static 'jeju.jpg' %}" width ='200px' alt=""><br>
+        <form action='/' method="POST">
+        {% csrf_token %}
+            <input type="teext" name="id"><br>
+            <input type="password" name="pw"><br>
+            <input type="submit" value="로그인">
+        </form>
+<!-- url 심화 : 사용자가 보는 url을 설정해주는 코드 -->
+<a href ="https://djangontv-ewtbf.run.groom.io/testtest/">이동</a>
+{% endblock body %}

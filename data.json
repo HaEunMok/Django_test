@@ -1,0 +1,62 @@
+[
+{
+    "model": "main.notice",
+    "pk": 1,
+    "fields": {
+        "title": "test 1",
+        "likeCount": 2,
+        "viewCount": 4,
+        "contents": "contents 1"
+    }
+},
+{
+    "model": "main.notice",
+    "pk": 2,
+    "fields": {
+        "title": "test 2",
+        "likeCount": 1,
+        "viewCount": 3,
+        "contents": "contents 2"
+    }
+},
+{
+    "model": "main.notice",
+    "pk": 3,
+    "fields": {
+        "title": "test 3",
+        "likeCount": 3,
+        "viewCount": 5,
+        "contents": "cotnents 3"
+    }
+},
+{
+    "model": "main.notice",
+    "pk": 4,
+    "fields": {
+        "title": "test 4",
+        "likeCount": 4,
+        "viewCount": 5,
+        "contents": "contents 4"
+    }
+},
+{
+    "model": "main.notice",
+    "pk": 5,
+    "fields": {
+        "title": "test 5",
+        "likeCount": 5,
+        "viewCount": 10,
+        "contents": "contents 5"
+    }
+},
+{
+    "model": "main.notice",
+    "pk": 6,
+    "fields": {
+        "title": "test 6",
+        "likeCount": 6,
+        "viewCount": 12,
+        "contents": "contents 6"
+    }
+}
+]

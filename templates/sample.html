@@ -1,0 +1,41 @@
+<h1>{{value}}</h1>
+<p>{{value.name}}</p>
+<p>{{value.2.title}}</p>
+
+{% for i in value %}
+    <h1>{{ forloop.counter0 }}-{{i.title}}</h1> 
+    <p>{{i.contents}}</p>
+    <p>{{i.viewCount}}</p>
+    {% if i.viewCount > 7 %}
+        <p>뷰 수가 많습니다.</p>
+    {% elif i.viewCount > 5 %}
+        <p>콘텐츠가 반응을 보이고 있습니다.</p>
+    {% else %}
+        <p>콘텐츠 홍보를 더 해주세요.</p>
+    {% endif %}
+{% endfor %}
+
+{% with valu='hello world' %}
+<h1>{{value}}</h1>
+{% endwith %}
+
+{# hello world #}
+{% comment %}
+<p>hello world!!!!!!!!!!!!!</p>
+{% for i in value %}
+    <h1>{{ forloop.counter0 }}-{{i.title}}</h1> 
+    <p>{{i.contents}}</p>
+    <p>{{i.viewCount}}</p>
+    {% if i.viewCount > 7 %}
+        <p>뷰 수가 많습니다.</p>
+    {% elif i.viewCount > 5 %}
+        <p>콘텐츠가 반응을 보이고 있습니다.</p>
+    {% else %}
+        <p>콘텐츠 홍보를 더 해주세요.</p>
+    {% endif %}
+{% endfor %}
+{% endcomment %}
+
+{% lorem 3 p %} <!-- lorem ipsum이 세문장으로 작성됨-->
+
+It is the {% now "jS \o\f F" %}
